@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UH VSA</title>
+    <meta
+      name="description"
+      content="The Vietnamese Student Association is a student ran organization that offers a inclusive and safe space for everyone looking to meet new people and learn about the Vietnamese Culture"
+    />
+
+    <title>UH VSA &mdash; Vietnamese Student Association</title>
+
+    <link rel="icon" href="/img/rsz_1uhvsa_white_logo.png" />
+    <link rel="apple-touch-icon" href="" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,21 +40,22 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="#" class="">
+      <a href="#" class="header-logo">
         <img
           src="img/uhvsa_white_logo.png"
           class="logo"
           alt="University of Houston Vietnamese Student Association Logo"
         />
-        <!-- <h1 class="">UH VSA</h1> -->
+        <h2 class="header-text">UH VSA</h2>
       </a>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#features">Why Join?</a></li>
           <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
           <li><a class="main-nav-link" href="#gallery">Our Officers</a></li>
           <!-- <li><a class="main-nav-link" href="#">Families/ACE</a></li> -->
-          <li><a class="main-nav-link nav-cta" href="#">Join Today!</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Join Today!</a></li>
         </ul>
       </nav>
     </header>
@@ -295,11 +304,18 @@
             <div class="gallery-text">
               <p class="subheading">Our Officers</p>
               <h2 class="heading-secondary gallery-heading">
-                Meet the 22' - 23' Board
+                Meet the '22 - '23 Board
               </h2>
               <p class="gallery-description">
-                This year we have a total of 12 officers, 5 on the executive
-                board and 7 on the general board.
+                With so many tasks and duties required to uphold UH VSA, we have
+                assemble an amazing team of student officers to split those
+                tasks and duties. Our officer positions for this year are:
+                President, Vice President External, Vice President Internal,
+                Treasurer, Secretary, Events Coordinator, Events Coordinator,
+                Public Relations Chair, Family Chair, Sports Director, Cultural
+                Directors. Whatever position it is, it's the top priority of all
+                officers to ensure the safety of our members.
+                <!-- Click on an officer to learn more about them -->
               </p>
             </div>
             <div class="gallery-items">
@@ -351,13 +367,15 @@
             <div class="cta-textbox">
               <h2 class="cta-heading heading-secondary">Join UH VSA today!</h2>
               <p class="cta-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                commodi quasi iste. Repellendus est cumque porro cum voluptas
-                aspernatur voluptatem qui dignissimos consectetur id quo dolorem
-                vel, minus, nostrum rem.
+                Whether you're looking to learn more about Vietnamese culture,
+                make new friends, or particpate in our sports or cultural team,
+                UH VSA has it all. Here at UH VSA, we strive to make it an
+                inclusive and safe space for everyone. We hope to see you at our
+                next general meeting or social!
               </p>
-              <!-- design a white button to contrast background -->
-              <a class="cta-btn">Sign Up</a>
+              <div class="cta-btn-container">
+                <a href="#" class="cta-btn">Sign Up</a>
+              </div>
             </div>
             <div class="cta-img" role="img" aria-label="something"></div>
           </div>
@@ -367,9 +385,17 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <ion-icon name="logo-instagram"></ion-icon>
-      <ion-icon name="logo-discord"></ion-icon>
-      <ion-icon name="logo-facebook"></ion-icon>
+      <div class="footer-logos">
+        <a href="https://www.instagram.com/uh_vsa/" target="_blank">
+          <ion-icon class="footer-logo" name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://discord.gg/aHZ8dvAqSr" target="_blank">
+          <ion-icon class="footer-logo" name="logo-discord"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/groups/uhvsa" target="_blank">
+          <ion-icon class="footer-logo" name="logo-facebook"></ion-icon>
+        </a>
+      </div>
     </footer>
   </body>
 </html>

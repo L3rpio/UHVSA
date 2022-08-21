@@ -70,6 +70,19 @@ body {
   background-color: #d3d6cf;
 }
 
+.header-logo:link,
+.header:visited {
+  text-decoration: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.header-text {
+  align-self: center;
+  font-size: 3.2rem;
+  color: #6c765e;
+}
+
 .logo {
   height: 6.2rem;
   background-color: #6c765e;
@@ -84,6 +97,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: #f0f1ef;
+  z-index: 1000;
 }
 
 .main-nav-list {
@@ -405,6 +419,34 @@ body {
   background-position: center;
 }
 
+.cta-btn-container {
+  text-align: center;
+  margin-top: 5.4rem;
+}
+
+.cta-btn:link,
+.cta-btn:visited {
+  color: #4c5342;
+  background-color: #f0f1ef;
+  padding: 2.4rem 12.8rem;
+  text-decoration: none;
+  border-radius: 35px;
+  font-size: 2rem;
+  font-weight: 600;
+
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+
+  transition: all 0.3s;
+}
+
+.cta-btn,
+.cta-btn:hover,
+.cta-btn:active {
+  text-decoration: underline;
+}
+
 @keyframes typewriter {
   to {
     left: 100%;
@@ -424,7 +466,27 @@ body {
   }
 }
 
+/* -------------------------------------------------------------- */
+/*                          Footer section                        */
+/* -------------------------------------------------------------- */
+
 .footer {
-  background-color: #6c765e;
-  height: 4rem;
+  padding: 2.4rem 1.6rem;
+  background-color: #f0f1ef;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.footer-logo {
+  color: #6c765e;
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer-logo:hover {
+  color: #4c5342;
 }
