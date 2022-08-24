@@ -485,6 +485,8 @@ body {
   color: #6c765e;
   width: 3rem;
   height: 3rem;
+
+  transition: all 0.4s;
 }
 
 .footer-logo:hover {
