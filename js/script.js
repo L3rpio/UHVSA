@@ -22,3 +22,19 @@ const heroObserver = new IntersectionObserver(stickyNav, {
 heroObserver.observe(heroSection);
 
 // Smooth scrolling
+
+// Mobile Navigation
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+const navListEl = document.querySelector(".main-nav-list");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+navListEl.addEventListener("click", function (e) {
+  // matching strategy
+  if (e.target.classList.contains("main-nav-link")) {
+    headerEl.classList.toggle("nav-open");
+  }
+});

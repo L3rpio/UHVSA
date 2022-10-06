@@ -91,6 +91,7 @@ BELOW 944px (Tablets)
   /* Mobile navigation */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
@@ -147,9 +148,84 @@ BELOW 944px (Tablets)
   }
 }
 
-/* BELOW 744px (Smaller tablets) */
+/* 
+BELOW 744px (Smaller tablets) 
+*/
 @media (max-width: 44em) {
   .heading-secondary {
     margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+}
+
+/* 
+BELOW 544px (Phones)
+*/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .features {
+    align-items: center;
+  }
+
+  .feature {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    width: 80%;
+  }
+
+  .feature-text {
+    padding: 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-textbox {
+    padding: 3.2rem;
+  }
+
+  .cta-img {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-btn-container {
+    margin-bottom: 2.4rem;
+  }
+
+  .cta-btn:link,
+  .cta-btn:visited {
+    padding: 2.4rem 10.8rem;
   }
 }
